@@ -1,7 +1,13 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
-  content: ["./**/*.{html,js}", "*.{html,js}"],
+  content: ["./**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'mono': ['Decima Mono Pro', ...defaultTheme.fontFamily.mono],
+      },
+    }
   },
   plugins: [],
 }

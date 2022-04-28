@@ -24,7 +24,8 @@ licensing, I am not able to distribute it here.
 - `docs/font-italic.woff2`
 
 If adapting the source code of this project to your own website, adjust the
-`src/main.css` file as deemed neccesary.
+`src/main.css` file as deemed neccesary. If so, you may also wish to adjust the
+`.gitignore` as needed also.
 
 ## License
 

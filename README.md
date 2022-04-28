@@ -19,9 +19,14 @@ As the target deployment platform is GitHub pages, the root of the page should b
 I personally use Decima Mono Pro as my font of choice for my website. However due to
 licensing, I am not able to distribute it here.
 
-- `docs/font-regular.woff2`
-- `docs/font-bold.woff2`
-- `docs/font-italic.woff2`
+- `docs/font-regular.woff2`  
+  Decima Mono Pro Regular, Weight 400
+
+- `docs/font-bold.woff2`  
+  Decima Mono Pro Bold, Weight 700
+
+- `docs/font-italic.woff2`  
+  Decima Mono Pro Italic, Weight 400
 
 If adapting the source code of this project to your own website, adjust the
 `src/main.css` file as deemed neccesary. If so, you may also wish to adjust the

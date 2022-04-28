@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build:css": "npx tailwindcss -i ./src/main.css -o ./dist/output.css",
-    "build:clean": "npx postcss ./dist/output.css > ./public/main.min.css"
+    "build:clean": "npx postcss ./dist/output.css > ./docs/main.min.css"
   },
   "repository": {
     "type": "git",

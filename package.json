@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npx tailwindcss -i ./src/main.css -o ./public/output.css",
-    "clean": "npx postcss ./public/output.css > ./public/output.css"
+    "build:css": "npx tailwindcss -i ./src/main.css -o ./dist/output.css",
+    "build:clean": "npx postcss ./dist/output.css > ./public/main.min.css"
   },
   "repository": {
     "type": "git",

@@ -577,10 +577,6 @@ html {
   left: -0.25rem;
 }
 
-.top-5 {
-  top: 1.25rem;
-}
-
 .isolate {
   isolation: isolate;
 }
@@ -1634,10 +1630,6 @@ html {
           background-clip: text;
 }
 
-.bg-center {
-  background-position: center;
-}
-
 .bg-repeat {
   background-repeat: repeat;
 }
@@ -1711,24 +1703,9 @@ html {
   padding: 0.25rem;
 }
 
-.p-4 {
-  padding: 1rem;
-}
-
-.p-6 {
-  padding: 1.5rem;
-}
-
-.p-64 {
-  padding: 16rem;
-}
-
-.p-7 {
-  padding: 1.75rem;
-}
-
-.p-px {
-  padding: 1px;
+.py-36 {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
 }
 
 .px-1\.5 {
@@ -1739,38 +1716,6 @@ html {
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
-}
-
-.py-9 {
-  padding-top: 2.25rem;
-  padding-bottom: 2.25rem;
-}
-
-.py-48 {
-  padding-top: 12rem;
-  padding-bottom: 12rem;
-}
-
-.py-40 {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-}
-
-.py-36 {
-  padding-top: 9rem;
-  padding-bottom: 9rem;
-}
-
-.pl-0\.5 {
-  padding-left: 0.125rem;
-}
-
-.pl-0 {
-  padding-left: 0px;
-}
-
-.pr-52 {
-  padding-right: 13rem;
 }
 
 .text-left {

@@ -11,6 +11,14 @@ Tailwind.
 npm run dev:watch  # shorthand for `tailwindcss ... --watch`
 ```
 
+## Quick Deploy
+
+```shell
+npm run deploy
+```
+
+This is a shorthand script for `npm run pre:fonts; npm run build:css && npm run build:post && npm run post:publish`
+
 ## Building
 
 ```shell
@@ -21,7 +29,7 @@ npm run build:post  # clean css using postcss+cssnano
 
 **Run the command in the root of the directory.**
 
-## Deploying
+## Publishing
 
 As the target deployment platform is GitHub pages, the following command will push the
 contents of the `public/` directory to a `gh-pages` branch.

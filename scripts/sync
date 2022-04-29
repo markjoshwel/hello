@@ -1,0 +1,5 @@
+# this is a personal script i use to sync my private repo with my public repo
+git remote add upstream https://github.com/markjoshwel/joshwel.dev.git
+git config pull.rebase false
+git pull upstream main
+npm run all+post

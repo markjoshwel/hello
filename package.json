@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "npx tailwindcss -i ./src/main.css -o ./public/main.css --watch",
+    "dev:watch": "npx tailwindcss -i ./src/main.css -o ./public/main.css --watch",
     "pre:fonts": "./scripts/fonts.sh",
     "build:css": "npx tailwindcss -i ./src/main.css -o ./public/main.css",
     "build:post": "npx postcss ./public/main.css > ./public/main.css",
-    "post:publish": "./scripts/publish.sh"
+    "post:publish": "npx gh-pages -d public"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.5",
     "cssnano": "^5.1.7",
+    "gh-pages": "^3.2.3",
     "postcss": "^8.4.12",
     "postcss-cli": "^9.1.0",
     "tailwindcss": "^3.0.24"

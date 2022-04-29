@@ -2,6 +2,15 @@
 
 Source files for my personal website that I host using GitHub Pages.
 
+## Developing
+
+During development, you can run the following command to get real-time updates from
+Tailwind.
+
+```shell
+npm run dev:watch  # shorthand for `tailwindcss ... --watch`
+```
+
 ## Building
 
 ```shell

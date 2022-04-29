@@ -6,11 +6,12 @@
   "scripts": {
     "dev:watch": "npx tailwindcss -i ./src/main.css -o ./public/main.css --watch",
     "pre:fonts": "./scripts/fonts",
-    "build:css": "npx tailwindcss -i ./src/main.css -o ./public/main.css",
-    "build:post": "npx postcss ./public/main.css > ./public/main.css",
+    "build:css": "npx tailwindcss -i ./src/main.css -o ./public/main.css --minify",
+    "build:post": "npx postcss ./public/main.css > ./public/main.min.css && rm ./public/main.css",
+    "build": "npm run build:css && npm run build:post",
     "post:publish": "npx gh-pages -t -d public",
-    "all": "npm run pre:fonts; npm run build:css",
-    "all+post": "npm run pre:fonts; npm run build:css && npm run post:publish"
+    "all": "npm run pre:fonts; npm run build",
+    "all+post": "npm run pre:fonts; npm run build && npm run post:publish"
   },
   "repository": {
     "type": "git",
@@ -23,11 +24,16 @@
   },
   "homepage": "https://github.com/markjoshwel/joshwel.dev#readme",
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^4.1.3",
     "autoprefixer": "^10.4.5",
     "cssnano": "^5.1.7",
+    "cssnano-preset-advanced": "^5.3.3",
     "gh-pages": "^3.2.3",
     "postcss": "^8.4.12",
     "postcss-cli": "^9.1.0",
     "tailwindcss": "^3.0.24"
+  },
+  "dependencies": {
+    "postcss-discard-comments": "^5.1.1"
   }
 }

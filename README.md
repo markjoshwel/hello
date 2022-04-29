@@ -5,14 +5,14 @@ Source files for my personal website that I host using GitHub Pages.
 ## Building
 
 ```shell
-npm run build  # build css using tailwind
-npm run clean  # clean css using postcss+cssnano
+npm run build:css  # build css using tailwind
+npm run build:post  # clean css using postcss+cssnano
 ```
 
 ## Deploying
 
-As the target deployment platform is GitHub pages, the root of the page should be the
-`/docs` folder.
+As the target deployment platform is GitHub pages, the root of the page is the `/docs`
+folder.
 
 ## Notice
 

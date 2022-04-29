@@ -6,7 +6,7 @@
   "scripts": {
     "watch": "npx tailwindcss -i ./src/main.css -o ./docs/main.css --watch",
     "build:css": "npx tailwindcss -i ./src/main.css -o ./docs/main.css",
-    "build:clean": "npx postcss ./docs/main.css > ./docs/main.css"
+    "build:post": "npx postcss ./docs/main.css > ./docs/main.css"
   },
   "repository": {
     "type": "git",

@@ -7,7 +7,7 @@ Source files for my personal website that I host using GitHub Pages.
 - [Building](#building)
 - [Publishing](#publishing)
 - [Font Notice](#font-notice)
-- [License](#license)y
+- [License](#license)
 
 ## Shorthands
 

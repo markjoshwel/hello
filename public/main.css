@@ -2217,7 +2217,7 @@ html {
 @font-face {
   font-family: "Decima Mono Pro";
 
-  src: url(".fonts/font-regular.woff2") format("woff2");
+  src: url("font-regular.woff2") format("woff2");
 
   font-weight: 400;
 
@@ -2229,7 +2229,7 @@ html {
 @font-face {
   font-family: "Decima Mono Pro";
 
-  src: url(".fonts/font-italic.woff2") format("woff2");
+  src: url("font-italic.woff2") format("woff2");
 
   font-weight: 400;
 
@@ -2241,7 +2241,7 @@ html {
 @font-face {
   font-family: "Decima Mono Pro";
 
-  src: url(".fonts/font-bold.woff2") format("woff2");
+  src: url("font-bold.woff2") format("woff2");
 
   font-weight: 700;
 

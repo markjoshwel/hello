@@ -2,6 +2,22 @@
 
 Source files for my personal website that I host using GitHub Pages.
 
+- [Shorthands](#shorthands)
+- [Developing](#developing)
+- [Building](#building)
+- [Publishing](#publishing)
+- [Font Notice](#font-notice)
+- [License](#license)y
+
+## Shorthands
+
+These are shorthand commands for [building](#building) and/or [publishing](#publishing).
+
+```shell
+npm run all  # runs all pre:*, build:* and post:* scripts.
+npm run all:no-post  # runs all pre:* and build:* post scripts.
+```
+
 ## Developing
 
 During development, you can run the following command to get real-time updates from
@@ -10,14 +26,6 @@ Tailwind.
 ```shell
 npm run dev:watch  # shorthand for `tailwindcss ... --watch`
 ```
-
-## Quick Deploy
-
-```shell
-npm run deploy
-```
-
-This is a shorthand script for `npm run pre:fonts; npm run build:css && npm run build:post && npm run post:publish`
 
 ## Building
 
@@ -40,7 +48,7 @@ npm run post:publish  # shorthand for scripts/publish
 
 **Run the command in the root of the directory.**
 
-## Notice
+## Font Notice
 
 I personally use Decima Mono Pro as my font of choice for my website. However due to
 licensing, I am not able to distribute it here.

@@ -35,7 +35,7 @@ npm run build:css  # build css using tailwind
 npm run build:post  # clean css using postcss+cssnano
 ```
 
-**Run the command in the root of the directory.**
+**Run the command in the root of the repository.**
 
 ## Publishing
 
@@ -46,7 +46,7 @@ contents of the `public/` directory to a `gh-pages` branch.
 npm run post:publish  # shorthand for scripts/publish
 ```
 
-**Run the command in the root of the directory.**
+**Run the command in the root of the repository.**
 
 ## Font Notice
 

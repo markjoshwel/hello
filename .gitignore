@@ -1,5 +1,5 @@
 # Fonts
-docs/*.woff2
+public/.fonts/*.woff2
 
 # Logs
 logs

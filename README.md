@@ -5,14 +5,23 @@ Source files for my personal website that I host using GitHub Pages.
 ## Building
 
 ```shell
+npm run pre:fonts  # retrieve fonts (shorthand for scripts/fonts.sh)
 npm run build:css  # build css using tailwind
 npm run build:post  # clean css using postcss+cssnano
 ```
 
+**Run the command in the root of the directory.**
+
 ## Deploying
 
-As the target deployment platform is GitHub pages, the root of the page is the `/docs`
-folder.
+As the target deployment platform is GitHub pages, the following command will push the
+contents of the `public/` directory to a `gh-pages` branch.
+
+```shell
+npm run post:publish  # shorthand for scripts/publish
+```
+
+**Run the command in the root of the directory.**
 
 ## Notice
 

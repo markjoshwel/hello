@@ -9,7 +9,8 @@
     "build:css": "npx tailwindcss -i ./src/main.css -o ./public/main.css",
     "build:post": "npx postcss ./public/main.css > ./public/main.css",
     "post:publish": "npx gh-pages -t -d public",
-    "deploy": "npm run pre:fonts; npm run build:css && npm run post:publish"
+    "all": "npm run pre:fonts; npm run build:css && npm run post:publish",
+    "all+post": "npm run pre:fonts; npm run build:css"
   },
   "repository": {
     "type": "git",

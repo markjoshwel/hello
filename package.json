@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev:watch": "npx tailwindcss -i ./src/main.css -o ./public/main.css --watch",
+    "dev:watch": "npx tailwindcss -i ./src/main.css -o ./public/main.min.css --watch",
     "pre:fonts": "./scripts/fonts",
     "build:css": "npx tailwindcss -i ./src/main.css -o ./public/main.css --minify",
-    "build:post": "npx postcss ./public/main.css > ./public/main.min.css && rm ./public/main.css",
+    "build:post": "npx postcss ./public/main.css -o ./public/main.min.css && rm ./public/main.css",
     "build": "npm run build:css && npm run build:post",
     "post:publish": "npx gh-pages -t -d public",
     "all": "npm run pre:fonts; npm run build",

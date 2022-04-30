@@ -44,7 +44,7 @@
 }
 
 .hovertext {
-    @apply normaltext hover:text-violet-300;
+    @apply hover:text-violet-300;
 }
 
 .italictext {

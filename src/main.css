@@ -30,3 +30,27 @@
     font-style: normal;
     font-display: swap;
 }
+
+.bigtext {
+    @apply text-violet-500 text-4xl font-bold;
+}
+
+.normaltext {
+    @apply text-white text-lg;
+}
+
+.italictext {
+    @apply normaltext italic;
+}
+
+.project {
+    @apply font-bold text-4xl text-violet-500 hover:text-violet-300 scroll-m-8;
+}
+.project-name {
+    @apply font-bold text-4xl text-violet-500 hover:text-violet-300 scroll-m-8;
+}
+.project-content {
+    @apply text-lg text-white font-normal;
+}
+.project-text {
+}

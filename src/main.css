@@ -39,7 +39,11 @@
     @apply text-white text-lg;
 }
 
-.quicktext {
+.smalltext {
+    @apply text-white text-sm;
+}
+
+.hovertext {
     @apply normaltext hover:text-violet-300;
 }
 
@@ -48,11 +52,11 @@
 }
 
 .project {
-    @apply font-bold text-4xl text-violet-500 hover:text-violet-300 scroll-m-8;
+    @apply font-bold text-4xl text-violet-500 hover:text-violet-300 scroll-m-8 mb-8;
 }
 
 .project-name {
-    @apply font-bold text-4xl text-violet-500 hover:text-violet-300 scroll-m-8;
+    @apply font-bold text-4xl text-violet-500 scroll-m-16;
 }
 
 .project-content {

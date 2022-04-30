@@ -14,28 +14,45 @@ Source files for my personal website that I host using GitHub Pages.
 These are shorthand commands for [building](#building) and/or [publishing](#publishing).
 
 ```shell
-npm run all  # runs all pre:* and build:* scripts
-npm run all+post  # same as 'all', but with post:* scripts
+npm run all  # runs all pre:*, build:* and post:* scripts
+npm run all+publish  # same as 'all', but also publish
 ```
 
 ## Developing
+
+Changes to the sites' source code occurs in the `src/` folder, where website previews
+come from `public/index.html`.
 
 During development, you can run the following command to get real-time updates from
 Tailwind.
 
 ```shell
-npm run dev:watch  # shorthand for `tailwindcss ... --watch`
+npm run dev:watch-html
+npm run dev:watch-css
 ```
+
+If you get a error regarding the `$SHELL` variable when running `dev:watch-html`, you can
+specify a shell by prefixing `SHELL=/bin/bash` (or whatever shell you use) to the
+command.
+
+The non-watch variants of these commands are:
+
+```shell
+npm run post:html
+npm run post:css
+```
+
+**Run these commands in the root of the repository.**
 
 ## Building
 
 ```shell
-npm run pre:fonts  # retrieve fonts (shorthand for scripts/fonts.sh)
-npm run build:css  # build css using tailwind
-npm run build:post  # clean css using postcss+cssnano
+npm run pre  # retrieve fonts (shorthand for scripts/fonts.sh)
+npm run build  # build css using tailwind
+npm run post  # clean css using postcss+cssnano and html using html-minifier-terser
 ```
 
-**Run the command in the root of the repository.**
+**Run these commands in the root of the repository.**
 
 ## Publishing
 
@@ -43,7 +60,7 @@ As the target deployment platform is GitHub pages, the following command will pu
 contents of the `public/` directory to a `gh-pages` branch.
 
 ```shell
-npm run post:publish  # shorthand for scripts/publish
+npm run publish  # shorthand for 'npx gh-pages -t -d public'
 ```
 
 **Run the command in the root of the repository.**

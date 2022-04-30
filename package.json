@@ -14,9 +14,10 @@
     
     "publish": "npx gh-pages -t -d ./public",
     
+    "all-pre": "npm run build && npm run post",
     "all": "npm run pre; npm run build && npm run post",
     "all+publish": "npm run all && npm run publish",
-    
+  
     "dev:watch-html": "npx chokidar './src/*.html' -c 'npm run post:html'",
     "dev:watch-css": "npx tailwindcss -i ./src/main.css -o ./public/main.min.css --watch"
   },

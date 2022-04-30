@@ -14,8 +14,9 @@ Source files for my personal website that I host using GitHub Pages.
 These are shorthand commands for [building](#building) and/or [publishing](#publishing).
 
 ```shell
-npm run all  # runs all pre:*, build:* and post:* scripts
-npm run all+publish  # same as 'all', but also publish
+npm run all          # runs all pre:*, build:* and post:* scripts
+npm run all-pre      # same as 'all', but without pre:* scripts
+npm run all+publish  # same as 'all', but also 'npm run publish'
 ```
 
 ## Developing

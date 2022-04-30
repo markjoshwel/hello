@@ -31,8 +31,16 @@
     font-display: swap;
 }
 
+.padding {
+    @apply px-6 md:px-12 lg:px-24 xl:px-36 2xl:px-44;
+}
+
 .bigtext {
     @apply text-violet-500 text-4xl font-bold;
+}
+
+.quotetext {
+    @apply text-white italic text-lg sm:text-2xl lg:text-2xl xl:text-2xl 2xl:text-2xl;
 }
 
 .normaltext {
@@ -56,17 +64,13 @@
 }
 
 .project-name {
-    @apply font-bold text-4xl text-violet-500 hover:text-violet-300 scroll-mt-20 pl-36 pr-36 list-none select-none outline-none;
+    @apply font-bold text-4xl text-violet-500 hover:text-violet-300 scroll-mt-20 padding list-none select-none outline-none;
 }
 
 .project-content {
-    @apply bg-violet-50 py-5 text-black font-normal mt-2 pl-36 pr-36;
+    @apply bg-[#23222b] text-white py-5 font-normal mt-2 padding;
 }
 
 .project-smalltext {
-    @apply text-black text-sm;
-}
-
-.project-hovertext {
-    @apply hover:text-violet-700;
+    @apply text-white text-sm;
 }

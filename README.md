@@ -1,5 +1,3 @@
-# joshwel.dev
-
 Source files for my personal website that I host using GitHub Pages.
 
 - [Shorthands](#shorthands)

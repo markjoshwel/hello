@@ -1,6 +1,10 @@
 # Fonts
 public/*.woff2
 
+# Generated Files
+public/**/*.html
+public/main.min.css
+
 # Logs
 logs
 *.log

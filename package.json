@@ -8,6 +8,8 @@
 
     "build": "npx tailwindcss -i ./src/main.css -o ./public/main.css --minify",
 
+    "clean": "rm ./public/*.html ./public/**/*.html ./public/*.css ./public/**/*.css",
+
     "post:html": "npx html-minifier-terser --input-dir ./src/ --file-ext html --output-dir ./public/ --collapse-whitespace --remove-comments",
     "post:css": "npx postcss ./public/main.css -o ./public/main.min.css && rm ./public/main.css",
     "post": "npm run post:html && npm run post:css",

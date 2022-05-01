@@ -6,7 +6,7 @@ module.exports = {
     require("tailwindcss"),
     require("autoprefixer"),
     cssnano({
-      "preset": "advanced",
+      preset: "advanced",
     }),
     purgecss({
       content: ['./public/*.html'],

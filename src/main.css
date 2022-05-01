@@ -52,7 +52,7 @@
 }
 
 .hovertext {
-    @apply hover:text-violet-400;
+    @apply hover:text-violet-300;
 }
 
 .italictext {
@@ -60,7 +60,7 @@
 }
 
 .project {
-    @apply font-bold text-violet-500 scroll-m-8 mb-4;
+    @apply font-bold text-violet-500 scroll-m-8 mb-4 mt-1;
 }
 
 .project-name {

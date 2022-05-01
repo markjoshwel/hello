@@ -60,7 +60,7 @@
 }
 
 .project {
-    @apply font-bold text-violet-500 scroll-m-8 mb-8;
+    @apply font-bold text-violet-500 scroll-m-8 mb-4;
 }
 
 .project-name {

@@ -11,7 +11,7 @@
     <meta name="description" content="Making what I feel like making.">
     <title>Mark Joshwel</title>
 </head>
-<body class="bg-black">
+<body class="bg-black text-white">
     <!-- Header -->
     <div class="padding normaltext">
         <p class="bigtext mt-10 sm:mt-15 md:mt-20 lg:mt-20 xl:mt-20 2xl:mt-20">
@@ -37,55 +37,64 @@
 
     <!-- Projects -->
     <div class="mt-10 text-lg text-white font-normal">
-        
-        <div class="padding bg-black pt-10 sticky top-0">
-            PROJECTS
-        </div>
+    <div class="padding bg-black pt-10 sticky top-0 z-10">PROJECTS</div>
 
-        <div class="project">
-            <details>
-                <summary id="pymtheg" class="project-name">
-                    pymtheg
-                </summary>
-                <div class="project-content">
+    <div class="project">
+        <details>
+            <summary id="pymtheg" class="project-name text-green-400 hover:text-green-300">
+                pymtheg
+            </summary>
+            <div class="mediaproject-content !bg-[#18211b]">
+                <div class="flex-[2] mediaproject-text">
                     <p>
-                        A Python script to share songs from Spotify/YouTube as a 15-second
-                        clip. (hence the name) Designed for use with Termux.
+                        A Python script to share songs from Spotify/YouTube as a 15-second clip. (hence the name)
+                        <br><br>
+                        Designed for use with <a class="hover:text-green-300" href="https://termux.com/">Termux</a>.
                     </p>
                     <br>
                     <p class="project-smalltext">
-                        <a class="hovertext" href="https://github.com/markjoshwel/pymtheg">
+                        <a class="hover:text-green-300" href="https://github.com/markjoshwel/pymtheg">
                             Source Code
                         </a>
                         ‧
                         Public Domain (Unlicense)
                     </p>
                 </div>
-            </details>
-        </div>
+                <video
+                    autoplay muted loop playsinline
+                    class="lazy flex-none h-[400px] xl:h-[500px] 2xl:h-[600px]"
+                    poster="./assets/pymtheg/demo.webp"
+                >
+                    <source src="./assets/pymtheg/demo.webm" type="video/webm">
+                    Guess you don't support AV1 video yet, bummer.
+                </video>
+            </div>
+        </details>
+    </div>
 
-        <div class="project">
-            <details>
-                <summary id="this" class="project-name">
-                    This Website
-                </summary>
-                <div class="project-content">
-                    <p>
-                        This website you're currently viewing (and thanks for doing so!)
-                        was created from scratch with no prior knowledge of HTML or CSS
-                        over three days.
-                    </p>
-                    <br>
-                    <p class="project-smalltext">
-                        <a class="hovertext" href="https://github.com/markjoshwel/website">
-                            Source Code
-                        </a>
-                        ‧
-                        Public Domain (Unlicense)
-                    </p>
-                </div>
-            </details>            
-        </div>
+    <div class="project">
+        <details>
+            <summary id="this" class="project-name">
+                This Website
+            </summary>
+            <div class="project-content">
+                <p>
+                    This website you're currently viewing (and thanks for doing so!)
+                    was created from scratch with no prior knowledge of HTML or CSS
+                    over three days.
+                </p>
+                <br>
+                <p class="project-smalltext">
+                    <a class="hovertext" href="https://github.com/markjoshwel/website">
+                        Source Code
+                    </a>
+                    ‧
+                    Public Domain (Unlicense)
+                </p>
+            </div>
+        </details>            
+    </div>
+    
     </div>
 
     <!-- Footer -->

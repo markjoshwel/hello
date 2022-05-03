@@ -60,15 +60,39 @@
 }
 
 .project {
-    @apply font-bold text-violet-500 scroll-m-8 mb-4 mt-1;
+    @apply 
+        scroll-m-8 mb-4
+        text-white font-bold
+    ;
 }
 
 .project-name {
-    @apply font-bold text-4xl text-violet-500 hover:text-violet-400 scroll-mt-20 padding list-none select-none outline-none;
+    @apply
+        padding pb-2
+        bg-black
+        font-bold text-4xl hover:text-gray-200
+        list-none
+        select-none outline-none
+        scroll-mt-[4.25rem] sticky top-[4.25rem]
+    ;
 }
 
 .project-content {
-    @apply bg-[#23222b] text-white py-5 font-normal mt-2 padding;
+    @apply
+        padding py-4
+        bg-[#23222b] text-white font-normal mt-2 padding
+    ;
+}
+
+.mediaproject-content {
+    @apply project-content flex flex-col-reverse sm:flex-row items-center justify-between;
+}
+
+.mediaproject-text {
+    @apply
+        mt-4 sm:mt-0
+        mr-0 sm:mr-4 md:mr-8 xl:mr-10 2xl:mr-14
+    ;
 }
 
 .project-smalltext {

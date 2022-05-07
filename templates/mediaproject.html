@@ -1,0 +1,57 @@
+<!--
+    Project + Demo Template
+
+    Place this inside the index.html file.
+    Remember to add a redirect too!
+
+    Placeholders
+        [anchor]
+        [name]
+        [details]
+        [link]
+        [licensing]
+        [demo poster]
+        [demo webm]
+        [demo mp4]
+        [demo mp4 size]
+        [demo description]
+-->
+<div class="project">
+    <details>
+        <summary id="[anchor]" class="project-name">
+            [name]
+        </summary>
+        <div class="mediaproject-content">
+            <div class="flex-[2] mediaproject-text">
+                <p>
+                    [details]
+                </p>
+                <br>
+                <p class="project-smalltext">
+                    <a class="hovertext" href="[link]">
+                        Source Code
+                    </a>
+                    ‧
+                    [licensing]
+                </p>
+            </div>
+            <div class="mediaproject-demo">
+                <video
+                    autoplay muted loop playsinline
+                    class="lazy flex-none h-[400px]"
+                    poster="[demo poster]"
+                >
+                    <source src="[demo webm]" type="video/webm">
+                    Guess you don't support AV1 video yet, bummer.
+                </video>
+                <div class="mediaproject-description">
+                    ▲ [demo description]
+                    |
+                    <a class="hovertext" href="[demo mp4]">
+                        Video ([demo mp4 size])
+                    </a>
+                </div>
+            </div>
+        </div>
+    </details>            
+</div>

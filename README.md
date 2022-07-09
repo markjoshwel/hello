@@ -1,4 +1,5 @@
-Source files for my personal website that I host using GitHub Pages.
+Source files for what may be personal website that I host using GitHub Pages. Check it
+out here: <https://github.com/markjoshwel/hello>
 
 - [Shorthands](#shorthands)
 - [Developing](#developing)
@@ -69,13 +70,13 @@ npm run publish  # shorthand for 'npx gh-pages -t -d public'
 I personally use Decima Mono Pro as my font of choice for my website. However due to
 licensing, I am not able to distribute it here.
 
-- `docs/font-regular.woff2`  
+- `docs/font-regular.woff2`
   Decima Mono Pro Regular, Weight 400
 
-- `docs/font-bold.woff2`  
+- `docs/font-bold.woff2`
   Decima Mono Pro Bold, Weight 700
 
-- `docs/font-italic.woff2`  
+- `docs/font-italic.woff2`
   Decima Mono Pro Italic, Weight 400
 
 If adapting the source code of this project to your own website, adjust the
